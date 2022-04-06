@@ -1,0 +1,260 @@
+*{
+    transition: all 0.5s ease-in-out;
+
+}
+
+body {
+    background-image: url("./images/ladies.jpg");
+    transition: all 0.5s ease-in-out;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color:rgba(55, 47, 63, 0.7);
+    padding: 8px;
+    border: 4px;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.titleBar {
+    display: flex;
+    justify-content: center;
+}
+
+.titleName {
+    justify-content: center;
+    color: white;
+    background-color:rgba(55, 47, 63, 0.7);
+    padding: 8px;
+    border: 4px;
+    border-radius: 20px;
+    border-style: solid;
+    font-size: 40px;
+}
+
+
+/* ALL ITEMS ON HOME SCREEN */
+#homeScreen {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;  
+}
+
+#captionBox{
+    display: flex;
+    background-color:rgba(55, 47, 63, 0.7);
+    padding: 8px;
+    border: 4px;
+    border-radius: 20px;
+    border-style: solid;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#quote {
+    font-size: 15px;
+}
+
+#description {
+    padding: 15px;
+}
+
+#startButton {
+    width: 25%;
+    height: 15%;
+    left: -50px;
+}
+
+#userInterface {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 800px;
+
+}
+
+#navBar {
+    display: flex;
+    justify-content: flex-start;
+    width: 10%
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 60%;
+}
+
+.navLinks li {
+    list-style-type: none;
+
+}
+
+
+/* ALL ITEMS WHEN PLAYING GAME */
+#gameScreen {
+    display:none;
+    gap: 20px;
+    width:85%;
+    
+}
+
+.gameInfo{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:80%;
+    border: 4px;
+    border-radius: 20px;
+    border-style: solid;
+    font-size: 20px;
+}
+
+.countDown {
+    display: none;
+}
+
+#questionPrompt{
+    display: flex;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 20%;
+    background-color:rgba(55, 47, 63, 0.7);
+}
+
+.buttons {
+    display: flex;
+    margin-left: 90px;
+    margin-bottom: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.buttons button {
+    width: 40%;
+}
+
+#scoreBar {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 15%;
+
+}
+
+.scoreSpan {
+    background-color:rgba(55, 47, 63, 0.7);
+    padding: 8px;
+    border: 4px;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+#timePenalty {
+    color: red;
+}
+
+#plusOne {
+    color:greenyellow;
+}
+
+/* ITEMS FOR END SCREEN */
+
+#endScreen {
+    display: none;
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#showScore {
+    color: white;
+    background-color:rgba(55, 47, 63, 0.7);
+    padding: 8px;
+    border: 4px;
+    border-radius: 20px;
+    border-style: solid;
+    font-size: 30px;
+}
+
+.scoreName {
+    color: white;
+    background-color:rgba(55, 47, 63, 0.7);
+    padding: 8px;
+    border: 4px;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+/* ITEMS FOR SCOREBOARD */
+#scoreBoard {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+
+#scoreBoard h2 {
+    color: white;
+    background-color:rgba(55, 47, 63, 0.7);
+    padding: 8px;
+    border: 4px;
+    border-radius: 20px;
+    border-style: solid;
+    font-size: 40px;
+}
+
+.scoresList {
+    color: white;
+    background-color:rgba(55, 47, 63, 0.7);
+    padding: 8px;
+    border: 4px;
+    border-radius: 20px;
+    border-style: solid;
+    padding-left: 60px;
+    width: 30%;
+}
+
+/* SHINE EFFECT */
+button:hover {
+    color: black;
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 800px 104px; 
+    display: inline-block;
+    position: relative; 
+    
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: placeholderShimmer;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes placeholderShimmer {
+    0% {
+      background-position: -468px 0;
+    }
+    
+    100% {
+      background-position: 468px 0; 
+    }
+  }

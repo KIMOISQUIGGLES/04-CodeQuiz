@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="titleBar">
+        <h1 class="titleName">Tyler's Quiz Game</h1>
+        
+    </header>
+    <main>
+        <div id="userInterface">
+            <aside id="navBar">
+                <ul class="navLinks">
+                    <li><button id="homeNav">HOME SCREEN</button></li>
+                    <li><button id="scoreNav">SCORE BOARD</button></li>
+                </ul>
+            </aside>
+            
+            <section id="homeScreen">
+                <div id="captionBox">
+                    <p id="quote"><em>"Tyler, you care way too much about this stupid game."</em> - my Parents</p>
+                    <p id="description">Just be aware - if you score well on this, you're a dweeb.</p>
+                </div>
+                
+                <button id="startButton">Click to Begin</button>
+            </section>
+
+            <section id="gameScreen">
+
+                <div class="gameInfo">
+                    <h1 id="questionPrompt"></h1>
+                    <div class="buttons">
+                        <button class="answer" id="answer1"></button>
+                        <button class="answer" id="answer2"></but>
+                        <button class="answer" id="answer3"></button>
+                        <button class="answer" id="answer4"></button>
+                        <div class="answer" id="correctAnswer"></div>
+                    </div>
+                </div>
+    
+                <div id="scoreBar">
+                    <span class="scoreSpan">
+                        <h3 id="timeLeft">Time Left: <span class="gameTimer">0</span></h3>
+                        <p id="timePenalty"></p>
+                        <h3 id="currentScore">Current Score: <span class="currentPoints">0</span></h3>
+                        <p id="plusOne"></p>
+                    </span>
+                </div>
+            </section>
+
+            <section id="endScreen">
+                <h2 id="showScore">You scored: <span class="correct"></span> out of <span class="totalQuestions"></span></h2>
+                <div class="nameSubmit">
+                    <input class="scoreName" placeholder="ENTER A NAME. . ."></input>
+                    <button class="submit">SUBMIT</button>
+                </div>
+            </section>
+            
+            <section id="scoreBoard">
+                <h2>Your Scores</h2>
+                <ol class="scoresList">
+                </ol>
+            </section>
+        </div>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
