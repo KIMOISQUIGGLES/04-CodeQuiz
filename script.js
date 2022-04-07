@@ -11,7 +11,7 @@ var questionArray = [
         question:"Question 2: What is the most reprinted card in Magic History?", 
         answer: {a:"Llanowar Elves", b:"Giant Growth", c:"Serra Angel", d:"Disenchant"}, 
         correctAnswer: "Giant Growth",
-        bgImage: "url('./images/giantGrowth.png')"
+        bgImage: "url('./images/giantGrowth.PNG')"
     },
     {
         question:"Question 3: Which card name was the original working title for Magic the Gathering?", 
@@ -95,8 +95,6 @@ var clearScores = document.querySelector("#clearScores");
 //QUERY SCORE BAR ELEMENTS
 var timeRemaining = document.querySelector(".gameTimer");
 var currentScore = document.querySelector(".currentPoints");
-
-//NICE
 var timeLeft = 69;
 
 //INITIALIZE ON PAGE LOAD
